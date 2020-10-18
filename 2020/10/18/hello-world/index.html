@@ -244,6 +244,30 @@
     </article>
     <div class="article-content mdui-container mdui-center mdui-shadow-12">
       
+    <div class="mdui-center">
+        <div class="mdui-center">
+            <article class="mdui-typo">
+                <h2>评论</h2>
+                <div class="comment"></div>
+            </article>
+        </div>
+    </div>
+	<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+	<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+	<script>
+		new Valine({
+			// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+			av: AV,
+			el: '.comment',
+			app_id: 'Jng2NUkg6zUYlLxMxl4S91kW-gzGzoHsz',
+			app_key: 'NKjBMKVPJv3CggFYFSUkUAvR',
+			notify: true, //评论提醒
+			verify: true, //验证码
+			avatar: 'retro',
+			placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+		});
+	</script>
+
 
 
 	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
