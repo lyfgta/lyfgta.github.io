@@ -1,178 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!--Head-->
 <head>
-  <meta charset="utf-8">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="google-site-verification" content="GZh2jRE6IgVXx8SYpoRZYwcs4_Wy7vWEAeSIHCs3UE8"/>
+    <meta name="baidu-site-verification" content="5EmnBCPDrY" />
+    
+    <title>Hello World | Hexo</title>
+    <!--一言-->
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <!--mdui-->
+    
+<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/css/mdui.min.css">
 
-  
-  <title>Archives: 2020 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://lyfgta.com/archives/2020/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/lyfgta.github.io/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/lyfgta.github.io/css/style.css">
+    
+<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
 
+    <!--jquery-->
+    
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!--theme-->
+    
+<link rel="stylesheet" href="/lyfgta.github.io/css/mdm.css">
+
+    
+<link rel="stylesheet" href="/lyfgta.github.io/css/mdm_theme_dark.css">
+
+    
+<script src="/lyfgta.github.io/js/mdm.js"></script>
+
+    
+    <!--高亮-->
+    
+<link rel="stylesheet" href="/lyfgta.github.io/css/solarized-light.css">
+
+    <!--全局变灰-->
+    
+
+    
+    
+<script src="/lyfgta.github.io/js/click-effect.js"></script>
+
+    
+
+    <!--本地搜索-->
+    <!-- <script src="js/search.js"></script> -->
+    <!--自动提交给百度-->
+    
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    
+
+    <!---google ad config-->
+    
+        <script data-ad-client="ca-pub-8181303774570877" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
 <meta name="generator" content="Hexo 5.2.0"></head>
+<!--header_bar-->
+<div class="mdui-appbar mdui-shadow-0" id="bar">
+    <div class="mdui-toolbar mdui-text-color-white">
+        <a class="mdui-btn mdui-btn-icon mdui-hidden-sm-up" mdui-menu="{target: '#example-2'}">
+            <i class="mdui-icon material-icons">menu</i>
+        </a>
+        <ul class="mdui-menu" id="example-2">
+        
+            <li class="mdui-menu-item">
+            <a href="/" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">home</i>
+                首页
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+            <li class="mdui-menu-item">
+            <a href="/tags" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">local_offer</i>
+                标签
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+            <li class="mdui-menu-item">
+            <a href="/archives" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">library_books</i>
+                归档
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+            <li class="mdui-menu-item">
+            <a href="/video" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">videocam</i>
+                视频
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+            <li class="mdui-menu-item">
+            <a href="/about" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">error_outline</i>
+                关于
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+        </ul>
+        <!--大屏-->
+        
+        <a href="/"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            首页
+        </a>
+        
+        <a href="/tags"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            标签
+        </a>
+        
+        <a href="/archives"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            归档
+        </a>
+        
+        <a href="/video"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            视频
+        </a>
+        
+        <a href="/about"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            关于
+        </a>
+        
+        <div class="mdui-toolbar-spacer"></div>
+        <!--
+        <div class="mdui-textfield mdui-textfield-expandable" style="max-width:500px;margin-right: -10px;">
+            <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">search</i>
+            </button>
+            <input class="mdui-textfield-input mdui-text-color-white" id="local-search-input" type="text" placeholder="输入搜索内容..."/>
+            <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
+        </div>-->
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/lyfgta.github.io/" id="logo">Hexo</a>
-      </h1>
-      
+        <button onclick="themeChange()"
+                class="mdui-btn mdui-btn-icon mdui-ripple mdui-text-color-white" 
+                mdui-tooltip="{content: '切换亮/暗色模式'}">
+            <i class="mdui-icon material-icons" id="themeIcon">brightness_7</i>
+        </button>
+        <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-menu="{target: '#share_menu'}">
+            <i class="mdui-icon material-icons">share</i>
+        </button>
+        <ul class="mdui-menu" id="share_menu">
+            
+                <li class="mdui-menu-item">
+                    <button class="mdui-btn mdui-ripple mdui-btn-block" onclick="">
+                        QQ
+                    </button>
+                </li>
+            
+            </ul>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+</div>
+<!--Header-->
+<header>
+    <div class="mdui-card-media" style="overflow: hidden;">
         
-          <a class="main-nav-link" href="/lyfgta.github.io/">Home</a>
+        <img src="https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/img1.jpg" class="header-box mdui-img-fluid" draggable="false">
         
-          <a class="main-nav-link" href="/lyfgta.github.io/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/lyfgta.github.io/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://lyfgta.com"></form>
-      </div>
+            <div class="header-content">
+                
+                <span class="header_title">Hexo</span></br>
+                
+                <p id="hitokoto">一言加载中...</p>
+            </div>
+        </img>
     </div>
-  </div>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-  
+<body>
+  <div class="mdui-center" id="content-inner" style="width:95%; max-width:700pt;">
+    <!-- 归档列表 -->
+
+ <!--归档列表 -->
+<div class="mdui-center post-content">
+  <h1>归档</h1>
+  <div class="mdui-panel" mdui-panel="{accordion : true}">
     
+          <div class="mdui-panel-item">
+            <div class="mdui-panel-item-header">
+              <div class="mdui-panel-item-title" id="2020">2020</div>
+              <div class="mdui-panel-item-summary">共1篇</div>
+              <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mdui-panel-item-body mdui-typo">
+                
+                  <span class="mdui-panel-item-summary post-time">
+                    10-18
+                  </span>
+                  <a class="mdui-panel-item-summary post-name" href="/lyfgta.github.io/2020/10/18/hello-world/">Hello World</a>
+                <hr>
+                
+            </div>
+          </div>
     
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/lyfgta.github.io/archives/2020" class="archive-year">2020</a>
+  </div>
+</div>
+</br></br></br>
+  </div>
+  <!--footer-->
+  <footer class="mdui-color-indigo">
+    <div class="mdui-container">
+        <div style="text-align: center; padding: 20px;">
+            <div >
+                Copyright &copy;
+                John Doe&nbsp&nbsp2020
+                &nbspTheme By
+                <a target="_blank" rel="noopener" href="https://github.com/TonyChenn/hexo-theme-mdm">mdm</a>
+                <iframe style="margin-left: 2px; margin-bottom:-5px;" 
+                        src="https://ghbtns.com/github-btn.html?user=TonyChenn&repo=hexo-theme-mdm&type=star&count=true" 
+                        frameborder="0" scrolling="0" width="91px" height="20px">
+                </iframe>
+            </div>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        总访问量 <span id="busuanzi_value_site_pv"></span> 次&nbsp&nbsp&nbsp总访客<span id="busuanzi_value_site_uv"></span>人
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/lyfgta.github.io/2020/10/18/hello-world/" class="archive-article-date">
-  <time datetime="2020-10-18T05:43:48.082Z" itemprop="datePublished">Oct 18</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/lyfgta.github.io/2020/10/18/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/lyfgta.github.io/archives/2020/10/">October 2020</a></li></ul>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/lyfgta.github.io/2020/10/18/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/lyfgta.github.io/" class="mobile-nav-link">Home</a>
-  
-    <a href="/lyfgta.github.io/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/lyfgta.github.io/fancybox/jquery.fancybox.css">
-
-  
-<script src="/lyfgta.github.io/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/lyfgta.github.io/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
+<!--goTop-->
+<div class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-pink">
+    <i class="mdui-icon material-icons">arrow_upward</i>
+</div>
 </html>
