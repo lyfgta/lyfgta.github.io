@@ -199,20 +199,78 @@
 <div>
   <div class="">
     <article class="article-content mdui-container mdui-center mdui-shadow-12">
-      <p>欢迎来到lyfgta！<br />lyfgta已由 WordPress 换成 Hexo，为什么这样做呢？因为真香😊 <br />虽然它俩写Blog的方式天差地别，但是 Hexo + GitHub 这种方式不仅更省钱，还能让创作更加专注，当然，只适合Blog创作，更高需求的网站还需要购买服务器搭建。<br />第一篇文章我要记录一下如何使用 Hexo 说 HelloWorld 的。</p>
-<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
-<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+      <p>欢迎来到lyfgta！<br />lyfgta已由 WordPress 换成 Hexo，为什么这样做呢？因为真香😊 <br />虽然它俩写Blog的方式天差地别，但是 Hexo + GitHub 这种方式不仅更省钱，还能让创作更加专注，当然，只适合Blog创作，更高需求的网站还需要购买服务器搭建。第一篇文章我要记录一下如何使用 Hexo 说 HelloWorld 的。</p>
+<h2 id="第一步-注册GitHub"><a class="header-anchor" href="#第一步-注册GitHub">¶</a>第一步 注册GitHub</h2>
+<p>首先要注册一个GitHub账号，然后在这里<a target="_blank" rel="noopener" href="https://github.com/login">登录</a></p>
+<h2 id="第二步-创建仓库"><a class="header-anchor" href="#第二步-创建仓库">¶</a>第二步 创建仓库</h2>
+<p>创建一个公共（Public）仓库（Repositories）并以“<a target="_blank" rel="noopener" href="http://xn--6qqv7i7thbp4a.github.io">你的名字.github.io</a>”命名</p>
+<h2 id="第三步-设置主题"><a class="header-anchor" href="#第三步-设置主题">¶</a>第三步 设置主题</h2>
+<p>进入仓库并打开设置，选择一个主题（Choose a theme）<br />至此一个简易的 GitHub 博客就创建好了，浏览器输入“<a target="_blank" rel="noopener" href="http://xn--6qqv7i7thbp4a.github.io">你的名字.github.io</a>”就可以访问！</p>
+<h2 id="第四步-安装环境"><a class="header-anchor" href="#第四步-安装环境">¶</a>第四步 安装环境</h2>
+<p>使用Hexo搭建博客的构架需要下载安装<a target="_blank" rel="noopener" href="https://wws.lanzous.com/iGArdhjmzad">Hexo环境</a> 里面包含 Git 、Node.js 安装会自动配置环境路径，所以一路下一步就好！</p>
+<h2 id="第五步-安装Hexo"><a class="header-anchor" href="#第五步-安装Hexo">¶</a>第五步 安装Hexo</h2>
+<p>在安装 Hexo 前，需要做两件事<br /><br>
+1.验证Git和Node.js<br>
+2.下载安装代码编辑器，这里我推荐<a target="_blank" rel="noopener" href="https://wws.lanzous.com/iQhpjhjnwvc">notepad++</a> 一路下一步就好</p>
+<h3 id="验证Git"><a class="header-anchor" href="#验证Git">¶</a>验证Git</h3>
+<p>Win + R 输入 CMD 打开并输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git version</span><br></pre></td></tr></table></figure>
+<p>出现版本号代表安装成功</p>
+<h3 id="验证Node-js"><a class="header-anchor" href="#验证Node-js">¶</a>验证Node.js</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br></pre></td></tr></table></figure>
+<p>出现版本号代表安装成功</p>
+<h3 id="安装Hexo"><a class="header-anchor" href="#安装Hexo">¶</a>安装Hexo</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
+<h3 id="验证Hexo"><a class="header-anchor" href="#验证Hexo">¶</a>验证Hexo</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure>
+<p>出现版本号代表安装成功<br /><br>
+卸载Hexo的话，把上面命令中的install替换成uninstall即可执行卸载</p>
+<h2 id="第六步-创建Hexo文件夹"><a class="header-anchor" href="#第六步-创建Hexo文件夹">¶</a>第六步 创建Hexo文件夹</h2>
+<p>Hexo文件夹就是本地博客文件夹，博客的增删改查就是对这文件夹里面的文件进行修改，以建在E盘为例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init E:\Hexo Blog</span><br></pre></td></tr></table></figure>
+<p>这个过程需要等待一下，CMD控制台上会有进度条</p>
+<h2 id="第七步-安装依赖包"><a class="header-anchor" href="#第七步-安装依赖包">¶</a>第七步 安装依赖包</h2>
+<p>进入Hexo文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /eE:\Hexo Blog</span><br></pre></td></tr></table></figure>
+<p>安装Npm</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>安装Hexo-deployer-git</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>至此本地博客搭建成功</p>
+<h2 id="第八步-远程部署博客"><a class="header-anchor" href="#第八步-远程部署博客">¶</a>第八步 远程部署博客</h2>
+<p>本地生成SSH公钥，首先设置你的邮箱和用户名</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">&quot;Email&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;Username&quot;</span></span><br></pre></td></tr></table></figure>
+<p>然后一路回车后，设置密码，生成密钥</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">&quot;Password&quot;</span></span><br></pre></td></tr></table></figure>
+<p>运行成功后会在当前目录生成.ssh文件夹，里面有id_rsa和id_rsa.pub两个文件，如果没找到，可以去C:\Users\Administrator\看看<br /><br>
+在 GitHub 上面点击头像选择设置，进入SSH and GPG keys 在 SSH keys 项点击New SSH keys 把id_rsa.pub文件里内容添加进去就好</p>
+<h3 id="验证连接"><a class="header-anchor" href="#验证连接">¶</a>验证连接</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>出现 “Are you sure……”，输入 yes 回车确认，显示 “Hi xxx! You’ve successfully……” 即连接成功</p>
+<h2 id="第九步-添加域名（可选）"><a class="header-anchor" href="#第九步-添加域名（可选）">¶</a>第九步 添加域名（可选）</h2>
+<p>如果你有域名的话，可以在GitHub上选择仓库，打开设置，在Custom domain项添加你的域名，把下一项的Https也勾选上，切到CMD控制台上输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ping username.github.io</span><br></pre></td></tr></table></figure>
+<p>得到一个IP，然后去域名商那里解析域名，向你的 DNS 配置中添加 3 条记录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ @          A             192.30.252.153（输入你得到的ip）</span><br><span class="line">$ @          A             192.30.252.154（输入你得到的ip）</span><br><span class="line">$ www      CNAME           username.github.io</span><br></pre></td></tr></table></figure>
+<p>用你的 Github 用户名替换 username 。十分钟后会生效，然后进到E盘打开 Hexo Blog文件夹，在 source 文件夹里新建个记事本命名“CNAME”，在里面输入域名，把后缀.txt删掉</p>
+<h2 id="第十步-修改配置文件"><a class="header-anchor" href="#第十步-修改配置文件">¶</a>第十步 修改配置文件</h2>
+<p>找到E盘的Hexo Blog文件夹，使用代码编辑工具<a target="_blank" rel="noopener" href="https://wws.lanzous.com/iQhpjhjnwvc">Notepad++</a> 打开_config.yml配置文件，依次修改 url、root、deploy字段</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ url: https://username.github.io/username.github.io 或者域名</span><br><span class="line">$ root: /username.github.io/</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ deploy:</span><br><span class="line">$  <span class="built_in">type</span>: git</span><br><span class="line">$  repository: https://github.com/username/username.github.io.git</span><br><span class="line">$  branch: master</span><br></pre></td></tr></table></figure>
+<p>用你的 Github 用户名替换 username，然后打开CMD控制台依次输入清理、重载上传代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -p</span><br></pre></td></tr></table></figure>
+<p>显示 INFO Deploy done: git 表示部署成功，在浏览器地址栏中输入仓库名或者域名来访问，仓库名 <a target="_blank" rel="noopener" href="http://username.github.io">username.github.io</a>。第一次部署的话，可能需要等待10分钟左右才能生效，从此世界上又诞生一个博客！</p>
+<h2 id="Hexo的基本命令"><a class="header-anchor" href="#Hexo的基本命令">¶</a>Hexo的基本命令</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g = hexo generate  <span class="comment">#生成</span></span><br><span class="line">$ hexo s = hexo server  <span class="comment">#启动本地预览</span></span><br><span class="line">$ hexo d = hexo deploy  <span class="comment">#远程部署</span></span><br><span class="line">$ hexo n <span class="string">&quot;文章标题&quot;</span> = hexo new <span class="string">&quot;文章标题&quot;</span>  <span class="comment">#新建一篇博文</span></span><br><span class="line">$ hexo s -g  <span class="comment">#等同先输入hexo g，再输入hexo s</span></span><br><span class="line">$ hexo d -g  <span class="comment">#等同先输入hexo g，再输入hexo d</span></span><br></pre></td></tr></table></figure>
+<h2 id="聊聊踩过的坑"><a class="header-anchor" href="#聊聊踩过的坑">¶</a>聊聊踩过的坑</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ warning: LF will be replaced by CRLF <span class="keyword">in</span></span><br></pre></td></tr></table></figure>
+<p>这个错误原因是存在符号转义问题，windows中的换行符为 CRLF，而在linux下的换行符为LF，解决办法：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.autocrlf <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>另外需要注意的是Github上要完成邮件验证，出现其他任何的问题，先删除博客目录下的db.json文件，然后清理再部署远程博客，操作时输入以下的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
+<p>目前的博客刚刚诞生，并没有什么独特的地方，想要提高吸引力，需要不断装饰博客，不过内容始终是第一生产力！至于如何更换主题，<a target="_blank" rel="noopener" href="http://xn--lyfgta-vo2j372pro4c.com">请关注lyfgta.com</a>，我们下一期见😀</p>
 
       
     <div class="mdui-container">
@@ -279,7 +337,7 @@
   <!-- <aside id="sidebar" class="mdui-shadow-2 mdui-hoverable">
     <div class="widget">
       <h3 class="title">目录</h3>
-      <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol> 
+      <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8CGitHub"><span class="post-toc-text">第一步 注册GitHub</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="post-toc-text">第二步 创建仓库</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5-%E8%AE%BE%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="post-toc-text">第三步 设置主题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83"><span class="post-toc-text">第四步 安装环境</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5-%E5%AE%89%E8%A3%85Hexo"><span class="post-toc-text">第五步 安装Hexo</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%AA%8C%E8%AF%81Git"><span class="post-toc-text">验证Git</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%AA%8C%E8%AF%81Node-js"><span class="post-toc-text">验证Node.js</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="post-toc-text">安装Hexo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%AA%8C%E8%AF%81Hexo"><span class="post-toc-text">验证Hexo</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E5%85%AD%E6%AD%A5-%E5%88%9B%E5%BB%BAHexo%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="post-toc-text">第六步 创建Hexo文件夹</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E4%B8%83%E6%AD%A5-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E5%8C%85"><span class="post-toc-text">第七步 安装依赖包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E5%85%AB%E6%AD%A5-%E8%BF%9C%E7%A8%8B%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2"><span class="post-toc-text">第八步 远程部署博客</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%AA%8C%E8%AF%81%E8%BF%9E%E6%8E%A5"><span class="post-toc-text">验证连接</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E4%B9%9D%E6%AD%A5-%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="post-toc-text">第九步 添加域名（可选）</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%AC%AC%E5%8D%81%E6%AD%A5-%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="post-toc-text">第十步 修改配置文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="post-toc-text">Hexo的基本命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%81%8A%E8%81%8A%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91"><span class="post-toc-text">聊聊踩过的坑</span></a></li></ol> 
     </div>
   </aside> -->
 </div>
