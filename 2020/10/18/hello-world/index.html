@@ -203,9 +203,9 @@
 <h2 id="第一步-注册GitHub"><a class="header-anchor" href="#第一步-注册GitHub">¶</a>第一步 注册GitHub</h2>
 <p>首先要注册一个GitHub账号，然后在这里<a target="_blank" rel="noopener" href="https://github.com/login">登录</a></p>
 <h2 id="第二步-创建仓库"><a class="header-anchor" href="#第二步-创建仓库">¶</a>第二步 创建仓库</h2>
-<p>创建一个公共（Public）仓库（Repositories）并以“<a target="_blank" rel="noopener" href="http://xn--6qqv7i7thbp4a.github.io">你的名字.github.io</a>”命名</p>
+<p>创建一个公共（Public）仓库（Repositories）并以“<a href="https://lyfgta.com/2020/10/18/hello-world/">你的名字.github.io</a> ”命名</p>
 <h2 id="第三步-设置主题"><a class="header-anchor" href="#第三步-设置主题">¶</a>第三步 设置主题</h2>
-<p>进入仓库并打开设置，选择一个主题（Choose a theme）<br />至此一个简易的 GitHub 博客就创建好了，浏览器输入“<a target="_blank" rel="noopener" href="http://xn--6qqv7i7thbp4a.github.io">你的名字.github.io</a>”就可以访问！</p>
+<p>进入仓库并打开设置，选择一个主题（Choose a theme）<br />至此一个简易的 GitHub 博客就创建好了，浏览器输入“<a href="https://lyfgta.com/2020/10/18/hello-world/">你的名字.github.io</a> ”就可以访问！</p>
 <h2 id="第四步-安装环境"><a class="header-anchor" href="#第四步-安装环境">¶</a>第四步 安装环境</h2>
 <p>使用Hexo搭建博客的构架需要下载安装<a target="_blank" rel="noopener" href="https://wws.lanzous.com/iGArdhjmzad">Hexo环境</a> 里面包含 Git 、Node.js 安装会自动配置环境路径，所以一路下一步就好！</p>
 <h2 id="第五步-安装Hexo"><a class="header-anchor" href="#第五步-安装Hexo">¶</a>第五步 安装Hexo</h2>
@@ -261,7 +261,7 @@
 <p>用你的 Github 用户名替换 username，然后打开CMD控制台依次输入清理、重载上传代码</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -p</span><br></pre></td></tr></table></figure>
-<p>显示 INFO Deploy done: git 表示部署成功，在浏览器地址栏中输入仓库名或者域名来访问，仓库名 <a target="_blank" rel="noopener" href="http://username.github.io">username.github.io</a>。第一次部署的话，可能需要等待10分钟左右才能生效，从此世界上又诞生一个博客！</p>
+<p>显示 INFO Deploy done: git 表示部署成功，在浏览器地址栏中输入仓库名或者域名来访问，仓库名 <a href="https://lyfgta.com/2020/10/18/hello-world/">你的名字.github.io</a> 。第一次部署的话，可能需要等待10分钟左右才能生效，从此世界上又诞生一个博客！</p>
 <h2 id="Hexo的基本命令"><a class="header-anchor" href="#Hexo的基本命令">¶</a>Hexo的基本命令</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g = hexo generate  <span class="comment">#生成</span></span><br><span class="line">$ hexo s = hexo server  <span class="comment">#启动本地预览</span></span><br><span class="line">$ hexo d = hexo deploy  <span class="comment">#远程部署</span></span><br><span class="line">$ hexo n <span class="string">&quot;文章标题&quot;</span> = hexo new <span class="string">&quot;文章标题&quot;</span>  <span class="comment">#新建一篇博文</span></span><br><span class="line">$ hexo s -g  <span class="comment">#等同先输入hexo g，再输入hexo s</span></span><br><span class="line">$ hexo d -g  <span class="comment">#等同先输入hexo g，再输入hexo d</span></span><br></pre></td></tr></table></figure>
 <h2 id="聊聊踩过的坑"><a class="header-anchor" href="#聊聊踩过的坑">¶</a>聊聊踩过的坑</h2>
@@ -270,7 +270,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.autocrlf <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 <p>另外需要注意的是Github上要完成邮件验证，出现其他任何的问题，先删除博客目录下的db.json文件，然后清理再部署远程博客，操作时输入以下的命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
-<p>目前的博客刚刚诞生，并没有什么独特的地方，想要提高吸引力，需要不断装饰博客，不过内容始终是第一生产力！至于如何更换主题，<a target="_blank" rel="noopener" href="http://xn--lyfgta-vo2j372pro4c.com">请关注lyfgta.com</a>，我们下一期见😀</p>
+<p>目前的博客刚刚诞生，并没有什么独特的地方，想要提高吸引力，需要不断装饰博客，不过内容始终是第一生产力！至于如何更换主题，请关注<a href="https://lyfgta.com/">lyfgta.com</a> ，我们下一期见😀</p>
 
       
     <div class="mdui-container">
