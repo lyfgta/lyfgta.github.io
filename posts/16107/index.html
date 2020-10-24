@@ -214,96 +214,62 @@
 2.下载安装代码编辑器，这里我推荐<a target="_blank" rel="noopener" href="https://wws.lanzous.com/iQhpjhjnwvc">notepad++</a> 一路下一步就好</p>
 <h3 id="验证Git"><a class="header-anchor" href="#验证Git">¶</a>验证Git</h3>
 <p>Win + R 输入 CMD 打开并输入</p>
-<pre><code class="language-bash">$ git version
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git version<br></code></pre></td></tr></table></figure>
 <p>出现版本号代表安装成功</p>
 <h3 id="验证Node-js"><a class="header-anchor" href="#验证Node-js">¶</a>验证Node.js</h3>
-<pre><code class="language-bash">$ npm -v
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm -v<br></code></pre></td></tr></table></figure>
 <p>出现版本号代表安装成功</p>
 <h3 id="安装Hexo"><a class="header-anchor" href="#安装Hexo">¶</a>安装Hexo</h3>
-<pre><code class="language-bash">$ npm install -g hexo
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm install -g hexo<br></code></pre></td></tr></table></figure>
 <h3 id="验证Hexo"><a class="header-anchor" href="#验证Hexo">¶</a>验证Hexo</h3>
-<pre><code class="language-bash">$ hexo -v
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo -v<br></code></pre></td></tr></table></figure>
 <p>出现版本号代表安装成功<br /><br>
 卸载Hexo的话，把上面命令中的install替换成uninstall即可执行卸载</p>
 <h2 id="第六步-创建Hexo文件夹"><a class="header-anchor" href="#第六步-创建Hexo文件夹">¶</a>第六步 创建Hexo文件夹</h2>
 <p>Hexo文件夹就是本地博客文件夹，博客的增删改查就是对这文件夹里面的文件进行修改，以建在E盘为例</p>
-<pre><code class="language-bash">$ hexo init E:\Hexo Blog
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo init E:\Hexo Blog<br></code></pre></td></tr></table></figure>
 <p>这个过程需要等待一下，CMD控制台上会有进度条</p>
 <h2 id="第七步-安装依赖包"><a class="header-anchor" href="#第七步-安装依赖包">¶</a>第七步 安装依赖包</h2>
 <p>进入Hexo文件夹</p>
-<pre><code class="language-bash">$ cd /eE:\Hexo Blog
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ <span class="hljs-built_in">cd</span> /eE:\Hexo Blog<br></code></pre></td></tr></table></figure>
 <p>安装Npm</p>
-<pre><code class="language-bash">$ npm install
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm install<br></code></pre></td></tr></table></figure>
 <p>安装Hexo-deployer-git</p>
-<pre><code class="language-bash">$ npm install hexo-deployer-git --save
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
 <p>至此本地博客搭建成功</p>
 <h2 id="第八步-远程部署博客"><a class="header-anchor" href="#第八步-远程部署博客">¶</a>第八步 远程部署博客</h2>
 <p>本地生成SSH公钥，首先设置你的邮箱和用户名</p>
-<pre><code class="language-bash">$ git config --global user.email &quot;Email&quot;
-</code></pre>
-<pre><code class="language-bash">$ git config --global user.name &quot;Username&quot;
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git config --global user.email <span class="hljs-string">&quot;Email&quot;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git config --global user.name <span class="hljs-string">&quot;Username&quot;</span><br></code></pre></td></tr></table></figure>
 <p>然后一路回车后，设置密码，生成密钥</p>
-<pre><code class="language-bash">$ ssh-keygen -t rsa -C &quot;Password&quot;
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh-keygen -t rsa -C <span class="hljs-string">&quot;Password&quot;</span><br></code></pre></td></tr></table></figure>
 <p>运行成功后会在当前目录生成.ssh文件夹，里面有id_rsa和id_rsa.pub两个文件，如果没找到，可以去C:\Users\Administrator\看看<br /><br>
 在 GitHub 上面点击头像选择设置，进入SSH and GPG keys 在 SSH keys 项点击New SSH keys 把id_rsa.pub文件里内容添加进去就好</p>
 <h3 id="验证连接"><a class="header-anchor" href="#验证连接">¶</a>验证连接</h3>
-<pre><code class="language-bash">$ ssh -T git@github.com
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ssh -T git@github.com<br></code></pre></td></tr></table></figure>
 <p>出现 “Are you sure……”，输入 yes 回车确认，显示 “Hi xxx! You’ve successfully……” 即连接成功</p>
 <h2 id="第九步-添加域名（可选）"><a class="header-anchor" href="#第九步-添加域名（可选）">¶</a>第九步 添加域名（可选）</h2>
 <p>如果你有域名的话，可以在GitHub上选择仓库，打开设置，在Custom domain项添加你的域名，把下一项的Https也勾选上，切到CMD控制台上输入</p>
-<pre><code class="language-bash">$ ping username.github.io
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ping username.github.io<br></code></pre></td></tr></table></figure>
 <p>得到一个IP，然后去域名商那里解析域名，向你的 DNS 配置中添加 3 条记录</p>
-<pre><code class="language-bash">$ @          A             192.30.252.153（输入你得到的ip）
-$ @          A             192.30.252.154（输入你得到的ip）
-$ www      CNAME           username.github.io
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ @          A             192.30.252.153（输入你得到的ip）<br>$ @          A             192.30.252.154（输入你得到的ip）<br>$ www      CNAME           username.github.io<br></code></pre></td></tr></table></figure>
 <p>用你的 Github 用户名替换 username 。十分钟后会生效，然后进到E盘打开 Hexo Blog文件夹，在 source 文件夹里新建个记事本命名“CNAME”，在里面输入域名，把后缀.txt删掉</p>
 <h2 id="第十步-修改配置文件"><a class="header-anchor" href="#第十步-修改配置文件">¶</a>第十步 修改配置文件</h2>
 <p>找到E盘的Hexo Blog文件夹，使用代码编辑工具<a target="_blank" rel="noopener" href="https://wws.lanzous.com/iQhpjhjnwvc">Notepad++</a> 打开_config.yml配置文件，依次修改 url、root、deploy字段</p>
-<pre><code class="language-bash">$ url: https://username.github.io/username.github.io 或者域名
-$ root: /username.github.io/
-</code></pre>
-<pre><code class="language-bash">$ deploy:
-$  type: git
-$  repository: https://github.com/username/username.github.io.git
-$  branch: master
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ url: https://username.github.io/username.github.io 或者域名<br>$ root: /username.github.io/<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ deploy:<br>$  <span class="hljs-built_in">type</span>: git<br>$  repository: https://github.com/username/username.github.io.git<br>$  branch: master<br></code></pre></td></tr></table></figure>
 <p>用你的 Github 用户名替换 username，然后打开CMD控制台依次输入清理、重载上传代码</p>
-<pre><code class="language-bash">$ hexo clean
-</code></pre>
-<pre><code class="language-bash">$ hexo d -p
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo clean<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo d -p<br></code></pre></td></tr></table></figure>
 <p>显示 INFO Deploy done: git 表示部署成功，在浏览器地址栏中输入仓库名或者域名来访问，仓库名 <a href="https://lyfgta.com/2020/10/18/hello-world/">你的名字.github.io</a> 。第一次部署的话，可能需要等待10分钟左右才能生效，从此世界上又诞生一个博客！</p>
 <h2 id="Hexo的基本命令"><a class="header-anchor" href="#Hexo的基本命令">¶</a>Hexo的基本命令</h2>
-<pre><code class="language-bash">$ hexo g = hexo generate  #生成
-$ hexo s = hexo server  #启动本地预览
-$ hexo d = hexo deploy  #远程部署
-$ hexo n &quot;文章标题&quot; = hexo new &quot;文章标题&quot;  #新建一篇博文
-$ hexo s -g  #等同先输入hexo g，再输入hexo s
-$ hexo d -g  #等同先输入hexo g，再输入hexo d
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo g = hexo generate  <span class="hljs-comment">#生成</span><br>$ hexo s = hexo server  <span class="hljs-comment">#启动本地预览</span><br>$ hexo d = hexo deploy  <span class="hljs-comment">#远程部署</span><br>$ hexo n <span class="hljs-string">&quot;文章标题&quot;</span> = hexo new <span class="hljs-string">&quot;文章标题&quot;</span>  <span class="hljs-comment">#新建一篇博文</span><br>$ hexo s -g  <span class="hljs-comment">#等同先输入hexo g，再输入hexo s</span><br>$ hexo d -g  <span class="hljs-comment">#等同先输入hexo g，再输入hexo d</span><br></code></pre></td></tr></table></figure>
 <h2 id="聊聊踩过的坑"><a class="header-anchor" href="#聊聊踩过的坑">¶</a>聊聊踩过的坑</h2>
-<pre><code class="language-bash">$ warning: LF will be replaced by CRLF in
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ warning: LF will be replaced by CRLF <span class="hljs-keyword">in</span><br></code></pre></td></tr></table></figure>
 <p>这个错误原因是存在符号转义问题，windows中的换行符为 CRLF，而在linux下的换行符为LF，解决办法：</p>
-<pre><code class="language-bash">$ git config --global core.autocrlf false
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git config --global core.autocrlf <span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
 <p>另外需要注意的是Github上要完成邮件验证，出现其他任何的问题，先删除博客目录下的db.json文件，然后清理再部署远程博客，操作时输入以下的命令</p>
-<pre><code class="language-bash">$ hexo clean
-$ hexo d -g
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo clean<br>$ hexo d -g<br></code></pre></td></tr></table></figure>
 <p>目前的博客刚刚诞生，并没有什么独特的地方，想要提高吸引力，需要不断装饰博客，不过内容始终是第一生产力！至于如何更换主题，请关注<a href="https://lyfgta.com/">lyfgta.com</a> ，我们下一期见😀</p>
 
       
