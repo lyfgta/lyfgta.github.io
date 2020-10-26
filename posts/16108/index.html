@@ -41,23 +41,20 @@
     
     
 <script src="//lyfgta.gitee.io/js/click-effect.js"></script>
-	
-    <!--判断手机和电脑-->	
-    <script type="text/javascript"> 
-	var system ={}; 
-	var p = navigator.platform; 
-	system.win = p.indexOf("Win") == 0; 
-	system.mac = p.indexOf("Mac") == 0; 
-	system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
-	if(system.win||system.mac||system.xll){
-	//如果是电脑跳转到百度 
-	window.location.href="https://lyfgta.com/posts/16108/"; 
-	}else{ 
-	//如果是手机,跳转到hao123首页
-	window.location.href="https://lyfgta.com/posts/16108-mobile/"; 
-	}
-	</script>
+    
+    <!--iframe自适应-->
+    <script>	
+    function adjustIframe(){
 
+	var ifm= document.getElementById("bi_iframe");
+
+	ifm.height=document.documentElement.clientHeight;
+
+	ifm.width=document.documentElement.clientWidth;
+
+	}	
+    </script>	
+	
     <!--本地搜索-->
     <!-- <script src="js/search.js"></script> -->
     <!--自动提交给百度-->
