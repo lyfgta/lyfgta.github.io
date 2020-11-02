@@ -36,25 +36,11 @@
 <link rel="stylesheet" href="//lyfgta.gitee.io/css/solarized-light.css">
 
     <!--全局变灰-->
-    <!--h5video-->
-<script src="//lyfgta.gitee.io/js/hls.min.js"></script>
-<script>
-  if(Hls.isSupported()) {
-    var video = document.getElementById('video');
-    var hls = new Hls();
-    hls.loadSource('http://www.streambox.fr/playlists/test_001/stream.m3u8');
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video.play();
-  });
- }
-</script>
-    <!--h5video-->
     
 <script src="//lyfgta.gitee.io/js/click-effect.js"></script>
     
     <!--本地搜索-->
-    <!-- <script src="js/search.js"></script> -->
+    <script src="js/search.js"></script> 
     <!--自动提交给百度-->
     
     <script>
@@ -130,14 +116,14 @@
         </a>
         
         <div class="mdui-toolbar-spacer"></div>
-        <!--
+        
         <div class="mdui-textfield mdui-textfield-expandable" style="max-width:500px;margin-right: -10px;">
             <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
                 <i class="mdui-icon material-icons">search</i>
             </button>
             <input class="mdui-textfield-input mdui-text-color-white" id="local-search-input" type="text" placeholder="输入搜索内容..."/>
             <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
-        </div>-->
+        </div>
 
         <button onclick="themeChange()"
                 class="mdui-btn mdui-btn-icon mdui-ripple mdui-text-color-white" 
@@ -174,7 +160,8 @@
 	<p><img src="http://r.photo.store.qq.com/psc?/V532CKVV2tZW5u0P5Ymp0bRwaU3v5QQF/45NBuzDIW489QBoVep5mcY.utJJ5zpPNYlRRpVUSMIjmMkHaS6Vww0Ixb802mIL.i*5il9EsEWAy41q6CSo7LC00SsAyJZ*wuy4r2xyctJ8!/r"></p>
         <p>GTA5线上小助免费好用，知道的都知道，不知道的访问<a href="https://crazyzhang.cn/" target="_blank">官网</a>慢慢了解，这里不详细介绍了，就放一个关于地堡赚钱的功能演示视频吧！</p>
 	    
-	    <video id="video" width="100%" controls="controls" poster="//lyfgta.gitee.io/pic/xsxzs/xsxzs.gif">
+	    <video width="100%" controls="controls" poster="//lyfgta.gitee.io/pic/xsxzs/xsxzs.gif" x5-video-player-type="h5">
+		<source src="//pan.iiyzf.cn/view.php/e305902e910cd208cd62df96a10267ec.mp4" type="video/mp4">
 	    	<source src="//lyfgta.gitee.io/video/xsxzs/GTA5OLGetMoney.webm" type="video/webm">
 		<source src="//lyfgta.gitee.io/video/xsxzs/test.m3u8" type="application/x-mpegURL">
 	    </video>
