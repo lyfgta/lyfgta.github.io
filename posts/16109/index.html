@@ -36,7 +36,20 @@
 
     <!--全局变灰-->
     
-
+    <!--h5video-->
+<script src="//lyfgta.gitee.io/js/hls.min.js"></script>
+<script>
+  if(Hls.isSupported()) {
+    var video = document.getElementById('video');
+    var hls = new Hls();
+    hls.loadSource('http://www.streambox.fr/playlists/test_001/stream.m3u8');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+  });
+ }
+</script>
+    <!--h5video-->
     
     
 <script src="//lyfgta.gitee.io/js/click-effect.js"></script>
@@ -164,17 +177,17 @@
 	<p><img src="//lyfgta.gitee.io/video/sbpk/2.jpg"></p>
 	
 	<h2>中文预告</h2>   
-	    <video width="100%" controls="controls" poster="//r.photo.store.qq.com/psc?/V532CKVV2tZW5u0P5Ymp0bRwaU3v5QQF/45NBuzDIW489QBoVep5mcdlN4STAYSIdUAzr*d4ZrvDpdULksmZUhg5TbTD5D5WVR3v78VzmNxb5vXuYd8fi4JQovCJtY2x9KCuXm*hdYts!/r">
+	    <video id="video" width="100%" controls="controls" poster="//r.photo.store.qq.com/psc?/V532CKVV2tZW5u0P5Ymp0bRwaU3v5QQF/45NBuzDIW489QBoVep5mcdlN4STAYSIdUAzr*d4ZrvDpdULksmZUhg5TbTD5D5WVR3v78VzmNxb5vXuYd8fi4JQovCJtY2x9KCuXm*hdYts!/r">
 	    	     <source src="//pan.iiyzf.cn/view.php/ea66caf026bb5502975b363b2e922216.webm" type="video/webm">
 		     <source src="//lyfgta.gitee.io/video/sbpk/zwyg/zwyg.m3u8" type="application/x-mpegURL">
 	    </video>    
 	 <h2>载具介绍</h2>   
-	    <video width="100%" controls="controls" poster="//lyfgta.gitee.io/video/sbpk/1.jpg">
+	    <video id="video" width="100%" controls="controls" poster="//lyfgta.gitee.io/video/sbpk/1.jpg">
 	    	     <source src="//pan.iiyzf.cn/view.php/42245923f0c19d3379408e3150612bdf.webm" type="video/webm">
 		     <source src="//lyfgta.gitee.io/video/sbpk/zjjs/zjjs.m3u8" type="application/x-mpegURL">
 	    </video>   
 	<h2>人物出身</h2>
-	    <video width="100%" controls="controls" poster="//r.photo.store.qq.com/psc?/V532CKVV2tZW5u0P5Ymp0bRwaU3v5QQF/45NBuzDIW489QBoVep5mcU7BH.GuC6YMa..Q2z4MOA7G5BrUU7a6HiZfiWUpFVrk87lxHlPac9mXS*J4xTg7YD5R9OzY1y.xL5urAscpQDo!/r">
+	    <video id="video" width="100%" controls="controls" poster="//r.photo.store.qq.com/psc?/V532CKVV2tZW5u0P5Ymp0bRwaU3v5QQF/45NBuzDIW489QBoVep5mcU7BH.GuC6YMa..Q2z4MOA7G5BrUU7a6HiZfiWUpFVrk87lxHlPac9mXS*J4xTg7YD5R9OzY1y.xL5urAscpQDo!/r">
 	    	     <source src="//pan.iiyzf.cn/view.php/203a70f33de0f3990aa33be1efda98dc.webm" type="video/webm">
 		     <source src="//lyfgta.gitee.io/video/sbpk/rwcs/rwcs.m3u8" type="application/x-mpegURL">
 	    </video>	   
