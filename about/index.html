@@ -49,12 +49,25 @@ background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(25
 background: -webkit-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
 background: -o-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
 -webkit-transform: skewX(-25deg);
--moz-transform: skewX(-25deg)
+-moz-transform: skewX(-25deg); animation:mymove 3s infinite; -webkit-animation:mymove 3s infinite; /* Safari and Chrome */
 }
 
-.guangshu:hover:before { left: 100%; transition: left 3s ease 0s; }
-.guangshu:active:before { left: 100%; transition: left 3s ease 0s; }
+/**.guangshu:hover:before { left: 100%; transition: left 3s ease 0s; }
+.guangshu:active:before { left: 100%; transition: left 3s ease 0s; }**/
 
+.guangshu:active:before { content:""; left: 100%; transition: left 3s ease 0s; }
+
+@keyframes mymove
+{
+	from {left:-130px;}
+	to {left:100%;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+	from {left:-130px;}
+	to {left:100%;}
+}
     </style>
 <!--扫光-->
 
