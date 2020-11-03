@@ -38,8 +38,41 @@
 
     <!--全局变灰-->
     
-
-    
+<!--扫光-->
+<style>
+#zanshang:before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 6px;
+    background-color: rgba(255,255,255,.5);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: searchLights 1s ease-in 1s infinite;
+    -o-animation: searchLights 1s ease-in 1s infinite;
+    animation: searchLights 1s ease-in 1s infinite
+}
+@-webkit-keyframes searchLights {
+    0% {left: -30px;top: 8px}
+    to {left: 75px;top: 8px}
+}
+@-o-keyframes searchLights {
+    0% {left: -30px;top: 8px}
+    to {left: 75px;top: 8px}
+}
+@-moz-keyframes searchLights {
+    0% {left: -30px;top: 8px}
+    to {left: 75px;top: 8px}
+}
+@keyframes searchLights {
+    0% {left: -30px;top: 8px}
+    to {left: 75px;top: 8px}
+}	
+</style>
+<!--扫光-->
     
 <script src="//lyfgta.gitee.io/js/click-effect.js"></script>
 
@@ -170,7 +203,7 @@
 	<ul>
 	<li>Discord：<a href="https://discord.com/invite/dde2XG9" target="_blank" rel="noopener">立即加入</a></li>
 	</ul>
-        <p><img src="//lyfgta.gitee.io/pic/zanshang/cm.png"></p>
+        <p><img id="zanshang" src="//lyfgta.gitee.io/pic/zanshang/cm.png"></p>
 	</article>
     
   </div>
