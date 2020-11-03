@@ -37,49 +37,26 @@
 <link rel="stylesheet" href="//lyfgta.gitee.io/css/solarized-light.css">
 
     <!--全局变灰-->
-    
-<!--扫光-->
-<style>
-#zanshang:before {
-    content: "";
-    position: absolute;
-    width: 28px;
-    height: 6px;
-    background-color: rgba(255,255,255,.5);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: searchLights 1s ease-in 1s infinite;
-    -o-animation: searchLights 1s ease-in 1s infinite;
-    animation: searchLights 1s ease-in 1s infinite
-}
-@-webkit-keyframes searchLights {
-    0% {left: -30px;top: 8px}
-    to {left: 75px;top: 8px}
-}
-@-o-keyframes searchLights {
-    0% {left: -30px;top: 8px}
-    to {left: 75px;top: 8px}
-}
-@-moz-keyframes searchLights {
-    0% {left: -30px;top: 8px}
-    to {left: 75px;top: 8px}
-}
-@keyframes searchLights {
-    0% {left: -30px;top: 8px}
-    to {left: 75px;top: 8px}
-}	
-</style>
-<!--扫光-->
-    
+	
 <script src="//lyfgta.gitee.io/js/click-effect.js"></script>
-
     
+<!--扫光-->
+    <style type="text/css">
+.guangshu { display:block; position: relative; width:800px; height:450px; margin:0 auto;}
+.guangshu:before { content: ""; position: absolute; width:200px; height: 100%; top: 0; left: -150px; overflow: hidden;
+background: -moz-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,.2)), color-stop(100%, rgba(255,255,255,0)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
+background: -o-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
+-webkit-transform: skewX(-25deg);
+-moz-transform: skewX(-25deg)
+}
 
-    <!--本地搜索-->
-    <!-- <script src="js/search.js"></script> -->
+.guangshu:hover:before { left: 150%; transition: left 1s ease 0s; }100% { left: 120px; top: 100px; }
+}
+    </style>
+<!--扫光-->
+
     <!--自动提交给百度-->
     
     <script>
@@ -155,14 +132,6 @@
         </a>
         
         <div class="mdui-toolbar-spacer"></div>
-        <!--
-        <div class="mdui-textfield mdui-textfield-expandable" style="max-width:500px;margin-right: -10px;">
-            <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
-                <i class="mdui-icon material-icons">search</i>
-            </button>
-            <input class="mdui-textfield-input mdui-text-color-white" id="local-search-input" type="text" placeholder="输入搜索内容..."/>
-            <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
-        </div>-->
 
         <button onclick="themeChange()"
                 class="mdui-btn mdui-btn-icon mdui-ripple mdui-text-color-white" 
@@ -203,7 +172,7 @@
 	<ul>
 	<li>Discord：<a href="https://discord.com/invite/dde2XG9" target="_blank" rel="noopener">立即加入</a></li>
 	</ul>
-        <p><img id="zanshang" src="//lyfgta.gitee.io/pic/zanshang/cm.png"></p>
+        <p><img class="guangshu" src="//lyfgta.gitee.io/pic/zanshang/cm.png"></p>
 	</article>
     
   </div>
