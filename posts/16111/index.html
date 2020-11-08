@@ -169,32 +169,11 @@
 <div>
   <div class="">
     <article class="article-content mdui-container mdui-center mdui-shadow-12">
-<p><iframe src="https://pan.iiyzf.cn/view.php/2bc3736c256de327dd026e4467248ba8.mp4" width="auto" height="100%" scrolling="no" frameborder="0" allowfullscreen src=""""></iframe></p>
-<p>Safari浏览器是苹果自带的浏览器，和其他浏览器不同的是，它不兼容video标签的Mp4、Webm、Ogg格式，兼容苹果公司推出的M3u8格式视频。下面就教大家如何把Mp4格式转换成M3u8格式视频！</p>
-<h1>第一步 安装FFmpeg</h1>
-<p>FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。</p>
-<h2>下载地址：
-	<div style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:1px;"></div>
-	<h2 align="right"><a target="_blank" rel="noopener" href="https://ffmpeg.org/download.html">官网下载</a></h2>
-	</h2>
-<p>解压压缩包，打开目录里的bin文件夹，并复制文件夹地址，右键打开我的电脑/属性/高级系统设置/环境变量/在系统变量里找到Path双击打开，把复制的地址添加进去。</p>
-<h1>第二步 验证FFmpeg</h1>
-<p>Win + R 输入 CMD 打开并输入</p>
-<pre><code class="language-bash">$ ffmpeg -version
-</code></pre>
-<p>出现版本号，代表安装成功</p>
-<h1>第三步 转换视频</h1>
-<pre><code class="language-bash">$ ffmpeg -i E:\demo\test.MP4 -profile:v baseline -level 3.0 -s 640x360 -start_number 0 -hls_time 10 -hls_list_size 0 -f hls E:\demo\test.m3u8
-</code></pre>
-<p>目录地址和文件名称替换即可！</p>
-<h1>第四步 插入代码</h1>
-<pre><code class="language-bash">$ source src="//lyfgta.gitee.io/video/xsxzs/test.m3u8" type="application/x-mpegURL"
-</code></pre>
-<h1>效果演示：
-	<div style="background:linear-gradient(to left,#FFFFFF,#b6b6b6,#FFFFFF);height:1px;"></div>
-	<h2 align="right"><a href="//lyfgta.com/posts/16108/" target="_blank">GTA5线上小助手</a></h2>
-	</h1>
-
+	    <video width="100%" controls="controls" poster="//lyfgta.gitee.io/pic/xsxzs/xsxzsposter.jpg" x5-video-player-type="h5" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow" style="object-fit:fill">
+		<source src="https://pan.iiyzf.cn/view.php/2bc3736c256de327dd026e4467248ba8.mp4" type="video/mp4">
+		<source src="//lyfgta.gitee.io/video/xsxzs/test.m3u8" type="application/x-mpegURL">
+	    </video>
+<p>第一季说唱新世代的冠军已经产生了，我从开始追到现在，觉得哔哩哔哩做的综艺，真的很棒很成功！随着说唱从地下逐渐走到地上，也让我感到很欣慰和激动！懒惰夺冠我认为是没有争议的，他的技术可能不是最好的，但是他的年龄、出身我认为是最符合说唱新世代冠军条件的。就像他在决赛歌词里唱的“我也只有20岁”真的是后浪推前浪，在20岁的年纪可以从事自己热爱的事业，而且发展的很不错，的确很让人羡慕。我很喜欢懒惰，腾格尔老师说他很real，我也感觉如此，尤其决赛的表现让我联想到了《8英里》这个电影，敢于说真话，敢于面对自己，是年轻人的性格！</p>
       
     <div class="mdui-container">
         <button class="mdui-center mdui-color-pink mdui-btn-icon mdui-btn mdui-btn-raised mdui-ripple"
