@@ -42,7 +42,23 @@
 <!--H5媒体兼容IE-->
 <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
 
-    <!--自动提交给百度-->
+<!--video自适应-->
+    <style type="text/css">
+.vid-wrap{
+    width:100%;background: #000;
+    position:relative;
+    padding-bottom:56.25%;    /*需要用padding来维持16:9比例,也就是9除以16*/
+    height: 0;
+}
+.vid-wrap video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%
+    </style>
+	
+	<!--自动提交给百度-->
     
     <script>
         (function(){
@@ -172,13 +188,13 @@
 <div>
   <div class="">
     <article class="article-content mdui-container mdui-center mdui-shadow-12">
-	<h1 align="center">
-	    <video width="300" high="200" controls="controls" poster="//lyfgta.gitee.io/pic/landuo/landuo.jpg" x5-video-player-type="h5" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow" style="object-fit:fill">
+	<div class="vid-wrap" align="center">
+	    <video controls="controls" poster="//lyfgta.gitee.io/pic/landuo/landuo.jpg" x5-video-player-type="h5" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow" style="object-fit:fill">
 		<source src="https://pan.iiyzf.cn/view.php/275c079af3f39229cf0a6cfb814230d9.webm" type="video/webm">
 		<source src="https://pan.iiyzf.cn/view.php/11bed383dfc4fba03f394a5a63057a8a.ogg" type="video/ogg">
 		<source src="//lyfgta.gitee.io/video/landuo/landuo.m3u8" type="application/x-mpegURL">
 	    </video>
-	</h1>
+	</div>
 <p>第一季说唱新世代的冠军已经产生了，我从开始追到现在，觉得哔哩哔哩做的综艺，真的很棒很成功！随着说唱从地下逐渐走到地上，也让我感到很欣慰和激动！懒惰夺冠我认为是没有争议的，他的技术可能不是最好的，但是他的年龄、出身我认为是最符合说唱新世代冠军条件的。就像他在决赛歌词里唱的“我也只有20岁”真的是后浪推前浪，在20岁的年纪可以从事自己热爱的事业，而且发展的很不错，的确很让人羡慕。我很喜欢懒惰，腾格尔老师说他很real，我也感觉如此，尤其决赛的表现让我联想到了《8英里》这个电影，敢于说真话，敢于面对自己，是年轻人的性格！</p>
       
     <div class="mdui-container">
