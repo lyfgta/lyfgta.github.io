@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <!--Head-->
@@ -12,7 +13,7 @@
 	<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/css/mdui.min.css">
 	<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
     
-    <title>归档 | Lyfgta</title>
+    <title>搜索 | Lyfgta</title>
 
 </head>    
 <!--header_bar-->
@@ -33,8 +34,8 @@
         
             <li class="mdui-menu-item">
             <a href="/archives" class="mdui-ripple">
-                <i class="mdui-menu-item-icon mdui-icon material-icons">&#xe8fe;</i>
-                归档
+                <i class="mdui-menu-item-icon mdui-icon material-icons">&#xe8b6;</i>
+                搜索
             </a>
             </li>
             <li class="mdui-divider"></li>
@@ -66,7 +67,7 @@
         
         <a href="/archives"
             class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
-            归档
+            搜索
         </a>
         
         <a href="/about"
@@ -80,15 +81,6 @@
         </a>
         
         <div class="mdui-toolbar-spacer"></div>
-        <!--search-->
-        <div class="mdui-textfield mdui-textfield-expandable" style="max-width:500px;margin-right: -10px;">
-            <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
-                <i class="mdui-icon material-icons">search</i>
-            </button>
-            <input class="mdui-textfield-input mdui-text-color-white" id="local-search-input" type="text" placeholder="输入搜索内容..."/>
-            <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
-        </div>
-		&nbsp&nbsp&nbsp&nbsp
     </div>
 </div>
 <!--Header-->
@@ -108,73 +100,74 @@
 </header>
 <body>
   <div class="mdui-center" id="content-inner" style="width:95%; max-width:700pt;">
-    <!-- 归档列表 -->
-
- <!--归档列表 -->
 <div class="mdui-center post-content">
-  <h1>归档</h1>
+  <h1>搜索</h1>
   <div class="mdui-panel" mdui-panel="{accordion : true}">
     
-          <div class="mdui-panel-item">
-            <div class="mdui-panel-item-header">
-              <div class="mdui-panel-item-title" id="2020">2020</div>
-              <div class="mdui-panel-item-summary">共6篇</div>
-              <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-            </div>
-            <div class="mdui-panel-item-body mdui-typo">
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    06-09
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/lyfgta.github.io/posts/16107/">Hello World</a>
-                <hr>
-                
-            </div>
-		  
-	    <div class="mdui-panel-item-body mdui-typo">
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    10-24
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/lyfgta.github.io/posts/16108/">GTA5线上小助手</a>
-                <hr>
-                
-            </div>
-		  
-	    <div class="mdui-panel-item-body mdui-typo">
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    10-27
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/lyfgta.github.io/posts/16109/">GTA6发售前玩它</a>
-                <hr>
-                
-            </div>	  
-		  
-	    <div class="mdui-panel-item-body mdui-typo">
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    11-03
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/lyfgta.github.io/posts/16110/">Safari兼容H5播放器</a>
-                <hr>
-                
-            </div>  
-		  
-		<div class="mdui-panel-item-body mdui-typo">
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    11-09
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/lyfgta.github.io/posts/16111/">说唱新世代冠军是他？</a>
-                <hr>
-                
-            </div>  
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜你想搜...">
+  <ul id="myUL">
+  <li><a href="#" class="header">A</a></li>
+
+  <li><a href="#" class="header">B</a></li>
+
+  <li><a href="#" class="header">C</a></li>
+  
+  <li><a href="#" class="header">D</a></li>
+  
+  <li><a href="#" class="header">E</a></li>
+  
+  <li><a href="#" class="header">F</a></li>
+  
+  <li><a href="#" class="header">G</a></li>
+  <li><a href="https://lyfgta.com/posts/16109/" target="_blank">GTA6发售前玩它</a></li>
+  <li><a href="https://lyfgta.com/posts/16108/" target="_blank">GTA5线上小助手</a></li>
+  
+  <li><a href="#" class="header">H</a></li>
+  <li><a href="https://lyfgta.com/posts/16107/" target="_blank">Hello World</a></li>
+  
+  <li><a href="#" class="header">I</a></li>
+  
+  <li><a href="#" class="header">J</a></li>
+  
+  <li><a href="#" class="header">K</a></li>
+  
+  <li><a href="#" class="header">L</a></li>
+  
+  <li><a href="#" class="header">M</a></li>
+  
+  <li><a href="#" class="header">N</a></li>
+  
+  <li><a href="#" class="header">O</a></li>
+
+  <li><a href="#" class="header">P</a></li>
+
+  <li><a href="#" class="header">Q</a></li>
+
+  <li><a href="#" class="header">R</a></li>
+
+  <li><a href="#" class="header">S</a></li>
+  <li><a href="https://lyfgta.com/posts/16111/" target="_blank">s说唱新世代冠军是他？</a></li>
+  <li><a href="https://lyfgta.com/posts/16110/" target="_blank">Safari兼容H5播放器</a></li>
+  
+  <li><a href="#" class="header">T</a></li>
+  
+  <li><a href="#" class="header">U</a></li>
+
+  <li><a href="#" class="header">V</a></li>
+
+  <li><a href="#" class="header">W</a></li>
+
+  <li><a href="#" class="header">X</a></li>
+
+  <li><a href="#" class="header">Y</a></li>
+
+  <li><a href="#" class="header">Z</a></li>
+
+  </ul>
 		  
 		  
 		  
           </div>
-    
   </div>
 </div>
 </br></br></br>
@@ -186,11 +179,8 @@
             <div >
                 Copyright &copy;
                 李炎峰&nbsp&nbsp2020
-                <br />邮箱&nbsp&nbspceo@lyfgta.com<br />驱动&nbspHexo&nbsp&nbsp|&nbsp&nbsp主题&nbsp
-                <a target="_blank" rel="noopener" href="https://github.com/TonyChenn/hexo-theme-mdm">mdm</a>
-		<br />
+                <br />邮箱&nbsp&nbspceo@lyfgta.com<br />驱动&nbsp&nbspHexo&nbsp&nbsp|&nbsp&nbsp主题&nbsp&nbspmdm
             </div>
-
         </div>
     </div>
 </footer>
@@ -200,8 +190,10 @@
 
     <!--theme-->
 <link rel="stylesheet" href="//lyfgta.gitee.io/css/mdm.css">
+<link rel="stylesheet" href="//lyfgta.gitee.io/css/seach.css">
 <link rel="stylesheet" href="//lyfgta.gitee.io/css/mdm_theme_dark.css">  
 <script src="//lyfgta.gitee.io/js/mdm.js"></script>
+<script src="//lyfgta.gitee.io/js/searchpage.js"></script>
    
     <!--自动提交给百度-->
     <script>
