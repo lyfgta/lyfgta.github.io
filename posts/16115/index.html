@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="//lyfgta.gitee.io/css/mdm.css">
 	<link rel="stylesheet" href="//lyfgta.gitee.io/css/post.css">
 	<link rel="stylesheet" href="//lyfgta.gitee.io/css/mdm_theme_dark.css">
+	<!--高亮-->
+	<link rel="stylesheet" href="//lyfgta.gitee.io/css/solarized-light.css">
+	<link rel="stylesheet" href="//lyfgta.gitee.io/css/highlight/vs2015.css">
 	
     <title>电视盒子刷机教程</title>
 
@@ -129,25 +132,24 @@
   <a href="#how">>区分盒子型号及闪存<</a>
   <br><br>
   <a href="#ready">>>>>>刷机前准备<<<<<</a>
-  <br><br>
+  <br><br><div id="why"></div>	
   <a href="#code">>>>>>>刷机代码<<<<<<</a>
   <br><br>
   <a href="#share">免费电影电视软件分享</a>
 </div>
-	
+
 <div>
   <div class="">
     <article class="article-content mdui-container mdui-center mdui-shadow-12">
-	
-	<h3 id="why">为什么刷机</h3>
-	
+	<div id="how"></div>
+	<h3>为什么刷机</h3>
 	<p>
 	不知道有没有小伙伴遇到过，在安装宽带的时候赠送了一个电视盒子，这样的盒子大多数是不能安装第三方软件的，而且很多内置软件都是需要付费的。
 	对于这样的盒子，闲置也是浪费，不如动手刷机试试，安装第三方软件，免费看电影电视剧，软件我会放在文章末尾免费分享给大家。
 	</p>
 
-	<h3 id="how">区分盒子型号及闪存</h3>
-	
+	<div id="ready"></div>
+	<h3>区分盒子型号及闪存</h3>
 	<p>
 	<strong>区分型号</strong><br>
 	鉴于我手里目前只有魔百盒CM211-2（朝歌代工）这款盒子，所以本文将使用这款盒子作为目标，展开教程。
@@ -156,8 +158,8 @@
 	拆开盒子可以看到，带针脚的是NAND闪存，不带针脚的是EMMC闪存，但有一种不带针脚的佰威也是NAND闪存。
 	</p>
 	
-	<h3 id="ready">刷机前准备</h3>
-	
+	<div id="code"></div>
+	<h3>刷机前准备</h3>
 	<p>
 	<strong>硬件</strong><br>
 	1、U盘
@@ -166,12 +168,28 @@
 	<br>
 	3、TTL转usb串口线
 	<br><strong>软件</strong><br>
-	
+	1、TTL驱动
+	<br>
+	2、Putty
 	</p>
 	
-	<h3 id="code">刷机代码</h3>
+	<div id="share"></div>
+	<h3>刷机代码</h3>
+	<strong>NAND闪存输入</strong><br>
+	<pre><code class="language-bash">$ cd mnt/sda/sda1   sda1为U盘实际识别名称为准，自己TTL查看
+$ dd if=recovery.img of=/dev/block/mtdblock2
+$ dd if=recovery.img of=/dev/block/mtdblock3
+$ dd if=emmc of=/dev/block/mtdblock4
+$ reboot</code></pre>
+
+	<strong>EMMC闪存输入</strong><br>
+	<pre><code class="language-bash">$ cd /mnt/sda/sda*
+$ dd if=/mnt/sda/sda1/recovery.img of=/dev/block/platform/soc/by-name/recovery
+$ dd if=emmc of=/dev/block/platform/soc/by-name/misc
+$ reboot</code></pre>
+	<p>所有命令输入完毕后，机顶盒自动重启进入recovery模式，然后选择“apply update from external storage”选项，再选择U盘上的update.zip进行更新，运行完毕盒子自动重启。</p>
 	
-	<h3 id="share">免费电影电视软件分享</h3>
+	<h3>免费电影电视软件分享</h3>
 	
 	<p>考虑到文章篇幅及软件的专业性，实操不便在这里展示，感兴趣的小伙伴可以加入QQ群和我详细交流。<br>提取码: 1129</p>
  
@@ -263,6 +281,8 @@
 
     <!--theme-->
 	<script src="//lyfgta.gitee.io/js/mdm.js"></script>
+	<script src="//lyfgta.gitee.io/js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	
     <!--自动提交给百度-->
     <script>
