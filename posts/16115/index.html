@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="//lyfgta.gitee.io/css/solarized-light.css">
 	<link rel="stylesheet" href="//lyfgta.gitee.io/css/highlight/vs2015.css">
 	
-    <title>电视盒子刷机教程</title>
+    <title>盒子刷机教程</title>
 
 </head>
 <!--header_bar-->
@@ -112,7 +112,7 @@
         
             <div class="header-content">
                 
-                <span class="header_title">电视盒子刷机教程</span></br>
+                <span class="header_title">盒子刷机教程</span></br>
                 
                 <p id="hitokoto">一言加载中...</p>
             </div>
@@ -129,7 +129,7 @@
 <div class="article-content mdui-container mdui-center mdui-shadow-12" align="center"><h3>目录<br></h3>
   <a href="#why">>>>>>为什么刷机<<<<<</a>
   <br><br>
-  <a href="#how">>区分盒子型号及闪存<</a>
+  <a href="#how">>>>>>>区分型号<<<<<<</a>
   <br><br>
   <a href="#ready">>>>>>刷机前准备<<<<<</a>
   <br><br><div id="why"></div>	
@@ -141,24 +141,18 @@
 <div>
   <div class="">
     <article class="article-content mdui-container mdui-center mdui-shadow-12">
-	<div id="how"></div>
 	<h3>为什么刷机</h3>
-	<p>
+	<p id="how">
 	不知道有没有小伙伴遇到过，在安装宽带的时候赠送了一个电视盒子，这样的盒子大多数是不能安装第三方软件的，而且很多内置软件都是需要付费的。
 	对于这样的盒子，闲置也是浪费，不如动手刷机试试，安装第三方软件，免费看电影电视剧，软件我会放在文章末尾免费分享给大家。
 	</p>
 
-	<div id="ready"></div>
-	<h3>区分盒子型号及闪存</h3>
-	<p>
-	<strong>区分型号</strong><br>
-	鉴于我手里目前只有魔百盒CM211-2（朝歌代工）这款盒子，所以本文将使用这款盒子作为目标，展开教程。
-	区分盒子型号很简单，翻过来看下盒子底部，看看是否有标识YS、CH等英文字母，如果什么标识都没有，那么就是朝歌！
-	<br><strong>区分闪存</strong><br>
-	拆开盒子可以看到，带针脚的是NAND闪存，不带针脚的是EMMC闪存，但有一种不带针脚的佰威也是NAND闪存。
+	<h3>区分型号</h3>
+	<p id="ready">
+	鉴于我手里只有魔百盒CM211-2（朝歌代工）这款盒子，所以本文将使用这款盒子作为目标，展开教程。
+	区分盒子型号很简单，翻过来看下盒子底部，看看是否标识YS、CH等英文字母，如果没有标识，就是朝歌！
 	</p>
 	
-	<div id="code"></div>
 	<h3>刷机前准备</h3>
 	<p>
 	<strong>硬件</strong><br>
@@ -166,32 +160,41 @@
 	<br>
 	2、电脑
 	<br>
-	3、TTL转usb串口线
-	<br><strong>软件</strong><br>
-	1、TTL驱动
+	3、电视
 	<br>
-	2、Putty&nbsp|&nbsp<font size="3"><a href="https://wws.lanzous.com/iGZOGjamo9e" target="_blank">立即下载</a></font>
+	4、盒子电源线
+	<br>
+	5、HDMI高清线
+	<br>
+	6、TTL转usb串口线
+	<p>拷贝固件三个文件到U盘根目录，把U盘插入接好TTL和HDMI高清线的盒子，并连接电视和电源。</p>
+	<p><img src="//lyfgta.gitee.io/pic/cm211/TTL.png"></p>
+	<p><br><strong>软件</strong><br>
+	Putty&nbsp|&nbsp<font size="3"><a href="https://wws.lanzous.com/iGZOGjamo9e" target="_blank">立即下载</a></font></p>
 	</p>
-	
-	<div id="share"></div>
+	<p><img src="//lyfgta.gitee.io/pic/cm211/Putty.png"></p>
+	<p><img src="//lyfgta.gitee.io/pic/cm211/Putty2.png"></p>
+	<p>先点击Open后给盒子开机，一切没有问题会开始跑代码。</p>
+	<p id="code"><img src="//lyfgta.gitee.io/pic/cm211/Qufsc.png"></p>
 	<h3>刷机代码</h3>
-	<strong>NAND闪存输入</strong><br>
+	<p><strong>NAND闪存输入</strong><br></p>
 	<pre><code class="language-bash">$ cd mnt/sda/sda1   sda1为U盘实际识别名称为准，自己TTL查看
 $ dd if=recovery.img of=/dev/block/mtdblock2
 $ dd if=recovery.img of=/dev/block/mtdblock3
 $ dd if=emmc of=/dev/block/mtdblock4
 $ reboot</code></pre>
 
-	<strong>EMMC闪存输入</strong><br>
+	<p><strong>EMMC闪存输入</strong><br></p>
 	<pre><code class="language-bash">$ cd /mnt/sda/sda1
 $ dd if=/mnt/sda/sda1/recovery.img of=/dev/block/platform/soc/by-name/recovery
 $ dd if=emmc of=/dev/block/platform/soc/by-name/misc
 $ reboot</code></pre>
-	<p>所有命令输入完毕后，机顶盒自动重启进入recovery模式，然后选择“apply update from external storage”选项，再选择U盘上的update.zip进行更新，运行完毕盒子自动重启。</p>
+	<p><img src="//lyfgta.gitee.io/pic/cm211/code.png"></p>
+	<p id="share">所有命令输入完毕后，机顶盒自动重启进入recovery模式，然后选择“apply update from external storage”选项，再选择U盘上的update.zip进行更新，运行完毕盒子自动重启。</p>
 	
 	<h3>免费电影电视软件分享</h3>
 	
-	<p>感兴趣的小伙伴可以加入QQ群免费下载。</p>
+	<p>感兴趣的小伙伴可以加入QQ群免费下载。<br><font color="#FF0000">注</font><font color="#F2000D">意</font><font color="#E5001A">刷</font><font color="#D80027">机</font><font color="#CB0034">有</font><font color="#BE0041">风</font><font color="#B1004E">险</font><font color="#A4005B">，</font><font color="#970068">一</font><font color="#8A0075">切</font><font color="#7D0082">后</font><font color="#70008F">果</font><font color="#63009C">需</font><font color="#5600A9">要</font><font color="#4900B6">自</font><font color="#3C00C3">己</font><font color="#2F00D0">承</font><font color="#2200DD">担</font><font color="#1500EA">！</font></p>
  
     <div class="mdui-container">
         <button class="mdui-center mdui-color-pink mdui-btn-icon mdui-btn mdui-btn-raised mdui-ripple"
