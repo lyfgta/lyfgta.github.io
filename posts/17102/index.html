@@ -18,6 +18,8 @@
 	<!--高亮-->
 	<link rel="stylesheet" href="//lyfgta.gitee.io/css/solarized-light.css">
 	<link rel="stylesheet" href="//lyfgta.gitee.io/css/highlight/vs2015.css">
+	<!--video自适应-->
+	<link rel="stylesheet" href="//lyfgta.gitee.io/css/videosize.css">
 	
     <title>NW.js封装网站</title>
 
@@ -157,23 +159,16 @@ $ {</code></pre>
 	<pre><code class="language-bash">$ copy /b nw.exe+app.nw app.exe
 </code></pre>
 
-	<h3>第二步&nbsp|&nbsp更改图标</h3>
+	<h3>视频教程</h3>
 	
-	<p>运行Resource_Hacker</p>
-	
-	<p><img src="//lyfgta.gitee.io/pic/dwsbpk/2077.png"></p>
-	
-	<p><img src="//lyfgta.gitee.io/pic/dwsbpk/dwsbpk2077.gif"></p>
-
-	<h3>如何运行？</h3>
-	
-	<p>1、解压缩运行 pcstory.exe<br>2、搜索下载赛博朋克2077<br>3、打开下载文件所在的盘符<br>4、运行 REDprelauncher.exe 来启动游戏<br></p>
-	
-	<p><img src="//lyfgta.gitee.io/pic/dwsbpk/run.png"></p>
-	
-	<p>资源来自互联网，软件仅供交流学习，请支持正版！</p>
+	<div class="vid-wrap" align="center">
+	    <video controls="controls" poster="//lyfgta.gitee.io/pic/landuo/lowlanduo.jpg" x5-video-player-type="h5" preload="auto" webkit-playsinline="true" playsinline="true" x-webkit-airplay="allow" style="object-fit:fill">
+		<source src="//lyfgta.gitee.io/video/landuo/landuo.webm" type="video/webm">
+		<source src="//lyfgta.gitee.io/video/landuo/landuo.m3u8" type="application/x-mpegURL">
+	    </video>
+	</div>
  
-
+	<br>
  
     <div class="mdui-container">
         <button class="mdui-center mdui-color-pink mdui-btn-icon mdui-btn mdui-btn-raised mdui-ripple"
@@ -265,6 +260,9 @@ $ {</code></pre>
 	<script src="//lyfgta.gitee.io/js/mdm.js"></script>
 	<script src="//lyfgta.gitee.io/js/highlight.pack.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+	
+	<!--H5媒体兼容IE-->
+	<script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
 	
     <!--自动提交给百度-->
     <script>
