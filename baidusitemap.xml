@@ -7,66 +7,129 @@
 >
 
 <url>
- <loc>https://lyfgta.com/about</loc>
- <priority>0.3</priority>
- <lastmod>2020-11-13</lastmod>
- <changefreq>hourly</changefreq>
-</url>
-
-<url>
  <loc>https://lyfgta.com/archives</loc>
  <priority>0.3</priority>
- <lastmod>2020-11-13</lastmod>
- <changefreq>hourly</changefreq>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 
 <url>
- <loc>https://lyfgta.com/</loc>
+ <loc>https://lyfgta.com/posts/17101/</loc>
  <priority>0.3</priority>
- <lastmod>2020-11-13</lastmod>
- <changefreq>hourly</changefreq>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 
 <url>
  <loc>https://lyfgta.com/Settings</loc>
  <priority>0.3</priority>
- <lastmod>2020-11-13</lastmod>
- <changefreq>hourly</changefreq>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 
 <url>
- <loc>https://lyfgta.com/posts/16107</loc>
+ <loc>https://lyfgta.com/p2</loc>
  <priority>0.3</priority>
- <lastmod>2020-11-13</lastmod>
- <changefreq>hourly</changefreq>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 
 <url>
- <loc>https://lyfgta.com/posts/16111</loc>
+ <loc>https://lyfgta.com/posts/16109/</loc>
  <priority>0.3</priority>
- <lastmod>2020-11-13</lastmod>
- <changefreq>hourly</changefreq>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 
 <url>
- <loc>https://lyfgta.com/posts/16110</loc>
+ <loc>https://lyfgta.com/p3</loc>
  <priority>0.3</priority>
- <lastmod>2020-11-13</lastmod>
- <changefreq>hourly</changefreq>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 
 <url>
- <loc>https://lyfgta.com/posts/16108</loc>
+ <loc>https://lyfgta.com/about</loc>
  <priority>0.3</priority>
- <lastmod>2020-11-13</lastmod>
- <changefreq>hourly</changefreq>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 
 <url>
- <loc>https://lyfgta.com/posts/16109</loc>
+ <loc>https://lyfgta.com/</loc>
  <priority>0.3</priority>
- <lastmod>2020-11-13</lastmod>
- <changefreq>hourly</changefreq>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/16111/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/16108/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/16110/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/17000/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/17102/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/16113/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/16112/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/16107/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/16115/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://lyfgta.com/posts/16114/</loc>
+ <priority>0.3</priority>
+ <lastmod>2021-01-14</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 
 </urlset>
