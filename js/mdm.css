@@ -223,6 +223,7 @@ function generate(url,options){
     console.log(options.url+' '+options.pic+' '+options.title);
     window.open(_url);
 }
+//分割线
 document.addEventListener('DOMContentLoaded', function () {
       var winHeight = window.innerHeight,
             docHeight = document.documentElement.scrollHeight,
