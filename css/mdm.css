@@ -317,9 +317,9 @@ article p {
 }
 
 #content_progress::-webkit-progress-value {
-      background-color: #35a935;
+      background-color: #4CC4C0;
 }
 
 #content_progress::-moz-progress-bar {
-      background-color: #35a935;
+      background-color: #4CC4C0;
 }
