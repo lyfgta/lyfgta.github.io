@@ -1,5 +1,6 @@
 a {
     color: #4CC4C0;
+    text-decoration:none;
 }
 
 h1,
@@ -323,3 +324,33 @@ article p {
 #content_progress::-moz-progress-bar {
       background-color: #4CC4C0;
 }
+/*图片轮播*/
+#container {
+	width: 400px;
+	height: 99px;
+	overflow: hidden;
+}
+ 
+#photo {
+	width: 1200px;
+	animation: switch 5s ease-out infinite;
+}
+ 
+#photo > img {
+	float: left;
+	width: 400px;
+	height: 99px;
+}
+ 
+@keyframes switch {
+	0%, 25% {
+		margin-left: 0;
+	}
+	35%, 60% {
+		margin-left: -400px;
+	}
+	70%, 100% {
+		margin-left: -800px;
+	}
+}
+
