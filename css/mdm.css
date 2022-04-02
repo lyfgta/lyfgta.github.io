@@ -337,7 +337,7 @@ article p {
 }
  
 #photo > img {
-	float: top;
+	float: left;
 	width: 1920px;
 	height: 600px;
 }
