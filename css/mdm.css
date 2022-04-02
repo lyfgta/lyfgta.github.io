@@ -326,19 +326,19 @@ article p {
 }
 /*图片轮播*/
 #container {
-	width: 400px;
+	width: 1920px;
 	height: 99px;
 	overflow: hidden;
 }
  
 #photo {
-	width: 1200px;
+	width: 5760px;
 	animation: switch 5s ease-out infinite;
 }
  
 #photo > img {
 	float: left;
-	width: 400px;
+	width: 1920px;
 	height: 99px;
 }
  
@@ -347,10 +347,10 @@ article p {
 		margin-left: 0;
 	}
 	35%, 60% {
-		margin-left: -400px;
+		margin-left: -1920px;
 	}
 	70%, 100% {
-		margin-left: -800px;
+		margin-left: -3840px;
 	}
 }
 
