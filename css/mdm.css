@@ -336,7 +336,7 @@ article p {
 	animation: switch 5s ease-out infinite;
 }
  
-#photo > img {
+#photo > a img {
 	float: left;
 	width: 400px;
 	height: 125px;
