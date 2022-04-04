@@ -266,9 +266,7 @@ body {
 }
 
 
-/* md文本的样式
-*/
-
+/* md文本的样式*/
 
 /*图片*/
 
@@ -276,17 +274,40 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    -webkit-user-drag: none;
 }
 
-article p {
+.article-section{
+    top:500px;
+    width:100%;
+    position: absolute;
+    left:0;
+}
+.article{
+    width: 100%;
+    max-width: 60pc;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.article-bg{
+    background-color: #fff;
+}
+.article-info{
+    padding: 30px;
+}
+.article p {
     font-size: 17px;
+}
+
+.talk-info{
+    margin-top: 15px;
+    padding: 30px;
 }
 
 #sidebar {
     width: 30%;
     max-width: 300px;
 }
-
 
 /*捐助*/
 
