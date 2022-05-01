@@ -122,6 +122,7 @@
 <div id="recent-posts" class="mdui-center">
  
 <br>
+<br>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." class="article-content mdui-container mdui-center mdui-shadow-12">
 <br>
 
